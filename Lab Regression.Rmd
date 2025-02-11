@@ -1,0 +1,41 @@
+---
+title: "Lab Regression"
+author: "Sophia De Oliveira"
+date: "2024-12-05"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Load Data
+
+
+```{r load}
+
+library(ggplot2)
+library(lattice)
+library(rpart)
+library(rpart.plot)
+library(caret)
+library(dplyr)
+
+library(readr)
+airfares <- read.csv("Airfares.csv", header = TRUE)
+head(airfares, 10)
+
+
+
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
